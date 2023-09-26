@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #42434444;
+}
+
+h1 {
+    margin: 0;
+    padding-left: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header {
+    display: flex;
+    text-decoration: none;
+    background: #006064;
+    box-shadow: 1px 1px 3px black;
+}
+
+ul {
+    list-style: none;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
+}
+
+.boxRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerForm {
+    width: 350px;
+    height: 400px;
+    margin-top: 35px;
+    display: flex;
+    border-top: 2px solid #006064;
+    background-color: #ffffffbe;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textField {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    position: absolute;
+    padding-top: 8px;
+    left: -50px;
+}
+
+input {
+    padding: 10px 0px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    text-align: center;
+    border: 1px solid rgb(211, 205, 205);
+}
+button {
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #006064
+    ;
+}

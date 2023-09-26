@@ -4,38 +4,47 @@
 <%- include('partials/head.ejs') %>
 
     <body>
+        <header>
+            <h1>
+                <%= title %>
+            </h1>
 
-        <h1>
-            <%= title %>
-        </h1>
+            <%- include('partials/navbar.ejs') %>
+        </header>
 
-        <%- include('partials/navbar.ejs') %>
-
-            <% if (typeof message !== 'undefined') { %>
-                <%= message%>
-                    <% } %>
-
-                        <form action="/register/add" method="POST">
-                            <div>
-                                <label>Nome</label>
+        <% if (typeof message !=='undefined' ) { %>
+            <%= message%>
+                <% } %>
+                    <div class="boxRegister">
+                        <form action="/register/add" method="POST" class="registerForm">
+                            <div class="textField">
+                                <div>
+                                    <label>Nome</label>
+                                </div>
                                 <input type="text" name="name" placeholder="Digite o seu nome">
                             </div>
-                            <div>
-                                <label>Idade</label>
+                            <div class="textField">
+                                <div>
+                                    <label>Idade</label>
+                                </div>
                                 <input type="text" name="age" placeholder="Digite a sua idade">
                             </div>
-                            <div>
-                                <label>E-mail</label>
+                            <div class="textField">
+                                <div>
+                                    <label>E-mail</label>
+                                </div>
                                 <input type="text" name="email" placeholder="Digite o seu e-mail">
                             </div>
-                            <div>
-                                <label>Senha</label>
+                            <div class="textField">
+                                <div>
+                                    <label>Senha</label>
+                                </div>
                                 <input type="text" name="password" placeholder="Digite a sua senha">
                             </div>
                             <button type="submit">Cadastrar</button>
                         </form>
-
-                        <%- include('partials/foot.ejs') %>
+                    </div>
+                    <%- include('partials/foot.ejs') %>
     </body>
 
 </html>
