@@ -31,20 +31,20 @@ ul {
 
 .boxRegister {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
 }
 
 .registerForm {
     width: 350px;
     height: 400px;
-    margin-top: 35px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border-top: 2px solid #006064;
     background-color: #ffffffbe;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .textField {
