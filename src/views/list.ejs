@@ -5,25 +5,25 @@
     <body>
 
         <header>
-            <h1>
+            <h2>
                 <%= title %>
-            </h1>
+            </h2>
             <%- include('partials/navbar.ejs') %>
         </header>
 
         <div class="boxRegister">
 
             <form class="registerForm">
-                <ul>
+                <div class="teste">
                     <% users.forEach((user)=> { %>
                         <li class="listClient">
                             <%= user.name %> - <%= user.email %> - Idade: <%= user.age %> -
-                                        <a href="/edit?id=<%= user._id %>"><br>[editar]</a> -
-                                        <a href="/remove/<%= user._id %>">[remover]</a>
-
+                                <a href="/edit?id=<%= user._id %>"><br>[editar]</a> -
+                                <a href="/remove/<%= user._id %>">[remover]</a>
+                                       
                         </li>
                         <% }) %>
-                </ul>
+                    </div>
             </form>
         </div>
         <%- include('partials/foot.ejs') %>

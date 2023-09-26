@@ -2,9 +2,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #42434444;
+    font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+h2 {
     margin: 0;
     padding-left: 10px;
     color: white;
@@ -22,6 +23,12 @@ header {
 
 ul {
     list-style: none;
+    padding-left: none;
+}
+
+.teste {
+    list-style: none;
+    
 }
 
 .list .menu {
@@ -39,7 +46,7 @@ ul {
 .registerForm {
     width: 500px;
     height: 450px;
-    padding-top: 20px;
+    padding: 30px 40px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
