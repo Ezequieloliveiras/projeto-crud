@@ -4,11 +4,13 @@
 
     <body>
 
-        <h1>
-            <%= title %>
-        </h1>
+        <header>
+            <h1>
+                <%= title %>
+            </h1>
+            <%- include('partials/navbar.ejs') %>
+        </header>
 
-        <%- include('partials/navbar.ejs') %>
 
             <ul>
                 <% users.forEach((user)=> { %>
