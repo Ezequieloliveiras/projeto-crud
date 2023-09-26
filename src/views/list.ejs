@@ -11,19 +11,22 @@
             <%- include('partials/navbar.ejs') %>
         </header>
 
+        <div class="boxRegister">
 
-            <ul>
-                <% users.forEach((user)=> { %>
-                    <li>
-                        <%= user.name %> - <%= user.email %> - Idade: <%= user.age %> -
-                                    <a href="/edit?id=<%= user._id %>">[editar]</a> -
-                                    <a href="/remove/<%= user._id %>">[remover]</a>
-                    </li>
-                    <% }) %>
-            </ul>
+            <form class="registerForm">
+                <ul>
+                    <% users.forEach((user)=> { %>
+                        <li class="listClient">
+                            <%= user.name %> - <%= user.email %> - Idade: <%= user.age %> -
+                                        <a href="/edit?id=<%= user._id %>"><br>[editar]</a> -
+                                        <a href="/remove/<%= user._id %>">[remover]</a>
 
-
-            <%- include('partials/foot.ejs') %>
+                        </li>
+                        <% }) %>
+                </ul>
+            </form>
+        </div>
+        <%- include('partials/foot.ejs') %>
 
     </body>
 
